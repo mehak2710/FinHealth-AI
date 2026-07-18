@@ -5,6 +5,8 @@ health and delivers personalized, AI-generated money advice — built to
 demonstrate how a modern fintech product can combine simple financial logic
 with an LLM-powered coaching layer.
 
+**🔗 Live Demo:** [https://gsnxfhcj3nhtoxzcjs58yi.streamlit.app/]
+
 ---
 
 ## Overview
@@ -25,11 +27,12 @@ bare-bones data app.
 
 ## Features
 
-- **Instant financial health scoring** (0–100) from a simple, transparent formula
-- **AI-generated coaching** — Groq/Llama 3.3 analyzes the user's real numbers and writes custom tips (not templated text)
-- **Graceful offline fallback** — works with zero setup even without an API key
-- **Zero backend/database** — fully client-facing, stateless, deploy-anywhere
-- **Environment-based secrets** — API key never hardcoded, loaded via `.env`
+- 📊 **Instant financial health scoring** (0–100) from a simple, transparent formula
+- 🤖 **AI-generated coaching** — Groq/Llama 3.3 analyzes the user's real numbers and writes custom tips (not templated text)
+- 🛟 **Graceful offline fallback** — works with zero setup even without an API key
+- 💜 **Realistic fintech UI** — PhonePe-inspired purple theme, gradient header, score ring, metric cards
+- ⚡ **Zero backend/database** — fully client-facing, stateless, deploy-anywhere
+- 🔒 **Environment-based secrets** — API key never hardcoded, loaded via `.env`
 
 ---
 
@@ -37,10 +40,10 @@ bare-bones data app.
 
 | Layer | Technology |
 |---|---|
-| App framework | Streamlit |
-| AI / LLM | Groq API |
-| Config | python-dotenv |
-| Styling | Custom CSS |
+| App framework | [Streamlit](https://streamlit.io/) |
+| AI / LLM | [Groq API](https://console.groq.com/) — Llama 3.3 70B Versatile |
+| Config | [python-dotenv](https://pypi.org/project/python-dotenv/) |
+| Styling | Custom CSS (`style.css`) |
 | Language | Python 3.9+ |
 
 ---
@@ -75,6 +78,11 @@ Opens automatically at `http://localhost:8501`.
 
 > No API key? The app still runs — it just uses built-in offline tips
 > instead of live AI-generated advice.
+
+### Deploy on Streamlit Community Cloud
+1. Push this repo to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io) → New app → point to `app.py`
+3. Add `GROQ_API_KEY` under **App settings → Secrets**
 
 ---
 
@@ -116,3 +124,6 @@ finhealth-ai/
 ```
 
 ---
+
+## License
+This project is open for educational and portfolio use.
