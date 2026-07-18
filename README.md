@@ -125,5 +125,3 @@ finhealth-ai/
 
 ---
 
-## License
-This project is open for educational and portfolio use.
